@@ -27,8 +27,7 @@ namespace ExceptionHandling.Tests
             decimal amountToWithdraw = 100.00m;
 
             // Act & Assert
-            // Używamy Assert.Throws<TException> do sprawdzenia, czy wywołanie akcji
-            // w nawiasach rzuci określony typ wyjątku.
+
             Assert.Throws<InsufficientFundsException>(() =>
             {
                 account.Withdraw(amountToWithdraw);

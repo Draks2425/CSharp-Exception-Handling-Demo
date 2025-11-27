@@ -35,7 +35,7 @@ namespace ExceptionHandling.Core
 
             if (amount > Balance)
             {
-                // TUTAJ RZUCAMY NASZ WŁASNY WYJĄTEK
+                //break point here
                 throw new InsufficientFundsException(
                     $"Attempted to withdraw {amount:C}. Current balance is only {Balance:C}."
                 );
